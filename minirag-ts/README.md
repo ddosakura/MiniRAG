@@ -20,8 +20,14 @@
 ## Task B
 
 ```md
-将 minirag/operate.py 重构为模块化结构：将其功能拆分成多个逻辑独立的子模块文件，统一放入新建的 minirag/operate/ 目录中。要求保持原有接口不变，确保外部代码无需修改导入语句即可继续使用。具体包括：1) 合理划分功能模块到单独文件 2) 在 minirag/operate/__init__.py 中维护原有导出关系 3) 保留原 minirag/operate.py 作为兼容层，仅包含必要的导入和转发逻辑。注意保持代码风格和文档的一致性。
+将 minirag/operate.py 重构为模块化结构：将其功能拆分成多个逻辑独立的子模块文件，统一放入新建的 minirag/operate/ 目录中。要求保持原有接口不变，确保外部代码无需修改导入语句即可继续使用。具体包括：
+
+1) 合理划分功能模块到五个单独文件中： hybrid_query.py minirag_query.py naive_query.py extract_entities.py utils.py (包含 chunking_by_token_size 等)
+2) 在 minirag/operate/__init__.py 中维护原有导出关系
+3) 保留原 minirag/operate.py 作为兼容层，仅包含必要的导入和转发逻辑。注意保持代码风格和文档的一致性。
 ```
+
+> 还行
 
 ## Task C?
 
@@ -32,5 +38,12 @@
 2. 处理所有依赖导入和模块导出，使转换后的代码可直接运行。
 3. 无需安装未安装的依赖库
 
-你此前已经处理了一些工作，现存的 ts 已经完成了翻译，请继续完成剩余的工作。
+你此前已经处理了一些工作，现存的 ts 已经完成了翻译，请继续完成剩余的工作，包括：
+
+- minirag/exceptions.py
+- minirag/llm.py
+- minirag/operate.py
+- minirag/operate/*.py
 ```
+
+>
