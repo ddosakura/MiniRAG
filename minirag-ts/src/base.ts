@@ -1,5 +1,5 @@
 import { EmbeddingFunc } from './utils';
-import * as np from './types/numpy-js';
+import * as np from 'numpy-ts';
 
 /**
  * 文本块模式
