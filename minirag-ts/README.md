@@ -29,7 +29,7 @@
 
 > 还行
 
-## Task C?
+## Task C
 
 ```md
 将 minirag/ 目录下的所有 Python (.py) 代码文件转换为 TypeScript (.ts) 格式，并将转换后的文件保存到 minirag-ts/ 目录中。
@@ -38,7 +38,9 @@
 2. 处理所有依赖导入和模块导出，使转换后的代码可直接运行。
 3. 无需安装未安装的依赖库
 
-你此前已经处理了一些工作，现存的 ts 已经完成了翻译，请继续完成剩余的工作，包括：
+你此前已经处理了一些工作，部分代码已经完成了翻译。
+
+请继续完成剩余的工作，包括：
 
 - minirag/exceptions.py
 - minirag/llm.py
@@ -46,4 +48,18 @@
 - minirag/operate/*.py
 ```
 
->
+> minirag/operate/utils 最后没翻完。
+
+## Task D
+
+```md
+将 minirag/operate/utils.py 转换为 TypeScript (.ts) 格式，并将转换后的文件保存到 minirag/operate/utils.ts。
+
+1. 确保类型定义准确（保持变量名、方法原本的驼峰/下划线命名方式），保留原有代码逻辑和功能，同时遵循 TypeScript 的最佳实践。
+2. 处理所有依赖导入和模块导出，使转换后的代码可直接运行。
+3. 无需安装未安装的依赖库
+
+你此前已经处理了一些工作，请继续完成剩余的工作。
+```
+
+> 
