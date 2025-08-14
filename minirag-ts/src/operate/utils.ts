@@ -1,4 +1,4 @@
-import { Counter, defaultdict } from 'collections.js';
+import { Counter } from '../collections';
 
 import {
   encode_string_by_tiktoken,
@@ -355,7 +355,7 @@ export async function path2chunk(
             if (text_units_node.length === descriptionlist_node.length) {
               if (text_units_node.length > 5) {
                 const max_ids = Math.max(5, Math.floor(text_units_node.length / 2));
-                const should_consider_idx = calculate_similarity(descriptionlist_node, query, max_ids);
+                const should_consider_idx = calculate_similarity(descriptionlist_node, query, undefined, undefined, max_ids);
                 const filtered_text_units = should_consider_idx.map(i => text_units_node[i]);
                 already_node[descriptionlist_node[0]] = filtered_text_units;
               }

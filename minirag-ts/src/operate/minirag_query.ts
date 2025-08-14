@@ -1,4 +1,4 @@
-import { Counter } from 'collections.js';
+import { Counter } from '../collections';
 
 import {
   list_of_list_to_csv,

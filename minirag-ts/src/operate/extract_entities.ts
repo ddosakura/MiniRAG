@@ -1,4 +1,4 @@
-import { defaultdict, Counter } from 'collections.js';
+import { defaultdict, Counter } from '../collections';
 
 import {
   compute_mdhash_id,
